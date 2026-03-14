@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BAEmpBench: Audio-Based Empathetic Response Judgment Benchmark</title>
+    <style>
+        body { font-family: Arial; max-width: 1000px; margin: auto; padding: 20px; }
+        .audio-player { margin: 20px 0; padding: 15px; background: #f5f5f5; border-radius: 8px; }
+        .dimension { display: inline-block; margin: 5px; padding: 5px 10px; background: #e0e0e0; border-radius: 15px; }
+        .high { background: #c8e6c9; }
+        .medium { background: #fff9c4; }
+        .low { background: #ffcdd2; }
+    </style>
+</head>
+<body>
+    <h1>🎧 BAEmpBench</h1>
+    <p><em>Benchmarking Audio-Based Empathetic Response Judgment in Large Audio Language Models</em></p>
+    
+    <h2>📊 Dataset Overview</h2>
+    <ul>
+        <li><strong>Total dialogues:</strong> 5,436</li>
+        <li><strong>Gold-standard samples:</strong> 379 (human-annotated)</li>
+        <li><strong>Datasets:</strong> Anno-MI (therapy), MESC (scripted), AvaMERG (synthetic)</li>
+        <li><strong>Six empathy dimensions:</strong> Vocal Warmth, Perceived Genuineness, Prosodic Attunement, Emotional Reaction, Exploration, Interpretation</li>
+    </ul>
+    
+    <h2>🔊 Sample Audio with Annotations</h2>
+    
+    <div class="audio-player">
+        <h3>Example 1: Anno-MI (Therapy Session)</h3>
+        <audio controls src="samples/anno_mi_sample1.wav"></audio>
+        <p><strong>Context:</strong> "Do you have a plan as to where you might want to go?"<br>
+        <strong>Speaker:</strong> "Um, I'm not sure."<br>
+        <strong>Listener:</strong> "So, kind of keeping your options open."</p>
+        <p><strong>Annotations:</strong> 
+            <span class="dimension medium">Emotional Reaction: 1</span>
+            <span class="dimension low">Exploration: 0</span>
+            <span class="dimension high">Interpretation: 2</span>
+            <span class="dimension medium">Genuineness: 1</span>
+            <span class="dimension high">Prosody: 2</span>
+            <span class="dimension medium">Warmth: 1</span>
+        </p>
+    </div>
+    
+    <div class="audio-player">
+        <h3>Example 2: MESC (Scripted Therapy)</h3>
+        <audio controls src="samples/mesc_sample1.wav"></audio>
+        <p><strong>Context:</strong> "You wanna write everybody's story for them?"<br>
+        <strong>Speaker:</strong> "I really think I'd be a shitty writer. I'd want to give everybody a happy ending."<br>
+        <strong>Listener:</strong> "Paul, I'm very sorry about your patient."</p>
+        <p><strong>Annotations:</strong> 
+            <span class="dimension high">Emotional Reaction: 2</span>
+            <span class="dimension low">Exploration: 0</span>
+            <span class="dimension medium">Interpretation: 1</span>
+            <span class="dimension high">Genuineness: 2</span>
+            <span class="dimension low">Prosody: 0</span>
+            <span class="dimension high">Warmth: 2</span>
+        </p>
+    </div>
+    
+    <div class="audio-player">
+        <h3>Example 3: AvaMERG (Synthetic)</h3>
+        <audio controls src="samples/avamerg_sample1.wav"></audio>
+        <p><strong>Context:</strong> "Did you call the police?"<br>
+        <strong>Speaker:</strong> "No but if it happens again I will. I ordered a camera for my porch. I couldn't get any sleep that night."<br>
+        <strong>Listener:</strong> "Do you live in a house or an apartment?"</p>
+        <p><strong>Annotations:</strong> 
+            <span class="dimension low">Emotional Reaction: 0</span>
+            <span class="dimension medium">Exploration: 1</span>
+            <span class="dimension low">Interpretation: 0</span>
+            <span class="dimension medium">Genuineness: 1</span>
+            <span class="dimension medium">Prosody: 1</span>
+            <span class="dimension low">Warmth: 0</span>
+        </p>
+    </div>
+    
+    <h2>📥 Download</h2>
+    <p>
+        <a href="https://github.com/[YOUR-USERNAME]/BAEmpBench/archive/refs/heads/main.zip">📦 Download Dataset (ZIP)</a><br>
+        <a href="https://github.com/[YOUR-USERNAME]/BAEmpBench">💻 GitHub Repository</a>
+    </p>
+    
+    <h2>📄 Citation</h2>
+    <pre>
+@article{anonymous2025baempbench,
+    title={BAEmpBench: Benchmarking Audio-Based Empathetic Response Judgment in Large Audio Language Models},
+    author={Anonymous},
+    journal={arXiv preprint},
+    year={2025}
+}
+    </pre>
+    
+    <p><em>Note: This is an anonymized preview for review. Full dataset will be released upon publication.</em></p>
+</body>
+</html>
